@@ -1,0 +1,5 @@
+.MuiListItem-root {
+    outline: 1px solid black;
+    width: 200px !important;
+    height: 150px !important;
+}
