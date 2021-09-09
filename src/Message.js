@@ -1,9 +1,10 @@
 import './Message.css'
 
-function Message(props) {
-    return (
-        <h3>React, {props.simpleText}</h3>
-    )
-}
+export const Message = ({ text, onClick, id }) => {
+    const handleClick = () => {
+      onClick(id);
+    }
+    return <div onClick={handleClick}>{text}</div>;
+  };
 
 export default Message;
